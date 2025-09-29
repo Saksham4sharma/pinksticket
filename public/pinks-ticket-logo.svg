@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Pink ticket shape -->
+  <path d="M60 150 C60 130, 80 110, 100 110 L260 110 C280 110, 300 130, 300 150 L300 200 C300 220, 280 240, 260 240 L240 240 L240 260 L220 260 L220 240 L200 240 L200 260 L180 260 L180 240 L160 240 L160 260 L140 260 L140 240 L120 240 L120 260 L100 260 L100 240 L100 240 C80 240, 60 220, 60 200 Z" fill="#E91E63" stroke="#C2185B" stroke-width="6"/>
+  
+  <!-- Ticket details -->
+  <circle cx="120" cy="170" r="15" fill="white"/>
+  <circle cx="150" cy="170" r="15" fill="white"/>
+  <rect x="180" y="160" width="25" height="20" rx="3" fill="white"/>
+  
+  <!-- Text -->
+  <text x="350" y="250" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#E91E63">PINK'S</text>
+  <text x="350" y="380" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#E91E63">TICKET</text>
+  <text x="350" y="460" font-family="Arial, sans-serif" font-size="40" fill="#E91E63">MOVIE BOOKING</text>
+</svg>

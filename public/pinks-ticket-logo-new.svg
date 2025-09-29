@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Pink ticket shape with rounded corners and cutouts -->
+  <defs>
+    <linearGradient id="ticketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C2185B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F06292;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main ticket body -->
+  <path d="M120 150 C120 130, 140 110, 160 110 L640 110 C660 110, 680 130, 680 150 L680 200 C670 210, 670 220, 680 230 L680 370 C670 380, 670 390, 680 400 L680 450 C680 470, 660 490, 640 490 L160 490 C140 490, 120 470, 120 450 L120 400 C130 390, 130 380, 120 370 L120 230 C130 220, 130 210, 120 200 Z" fill="url(#ticketGradient)" stroke="#AD1457" stroke-width="8"/>
+  
+  <!-- Inner ticket area -->
+  <path d="M150 150 C150 140, 160 130, 170 130 L610 130 C620 130, 630 140, 630 150 L630 190 C625 195, 625 205, 630 210 L630 390 C625 395, 625 405, 630 410 L630 450 C630 460, 620 470, 610 470 L170 470 C160 470, 150 460, 150 450 L150 410 C155 405, 155 395, 150 390 L150 210 C155 205, 155 195, 150 190 Z" fill="url(#innerGradient)" opacity="0.9"/>
+  
+  <!-- Camera icon -->
+  <!-- Camera body -->
+  <rect x="300" y="220" width="120" height="80" rx="15" fill="white" opacity="0.95"/>
+  
+  <!-- Camera lens (large circle) -->
+  <circle cx="340" cy="260" r="25" fill="white" stroke="#E91E63" stroke-width="3"/>
+  <circle cx="340" cy="260" r="15" fill="#E91E63"/>
+  
+  <!-- Camera viewfinder (small circle) -->
+  <circle cx="380" cy="240" r="8" fill="white" stroke="#E91E63" stroke-width="2"/>
+  <circle cx="380" cy="240" r="4" fill="#E91E63"/>
+  
+  <!-- Film strip element -->
+  <polygon points="440,250 480,250 470,270 450,270" fill="white" opacity="0.95"/>
+  <rect x="445" y="255" width="25" height="10" fill="#E91E63"/>
+  
+</svg>
