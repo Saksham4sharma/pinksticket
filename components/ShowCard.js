@@ -26,7 +26,7 @@ export default function ShowCard({ show }) {
 
   return (
     <Link href={`/shows/${show._id}`}>
-      <div className="group cursor-pointer">
+      <div className="group cursor-pointer h-full flex flex-col">
         {/* Movie poster */}
         <div className="relative aspect-[3/4] mb-4 overflow-hidden rounded-lg border-2 border-gray-800 shadow-2xl transition-all duration-300 group-hover:border-yellow-400 group-hover:scale-105 group-hover:shadow-yellow-400/20">
           {show.posterUrl ? (
@@ -70,8 +70,8 @@ export default function ShowCard({ show }) {
         </div>
 
         {/* Movie info */}
-        <div className="space-y-3">
-          <h3 className="font-black text-white text-base md:text-lg leading-tight line-clamp-2 group-hover:text-yellow-400 transition-colors">
+        <div className="flex flex-col flex-grow space-y-3">
+          <h3 className="font-black text-white text-base md:text-lg leading-tight line-clamp-2 group-hover:text-yellow-400 transition-colors min-h-[3rem] flex items-center">
             {show.title}
           </h3>
           
@@ -85,7 +85,7 @@ export default function ShowCard({ show }) {
           </div>
           
           {/* Ticket stub style button */}
-          <div className="mt-4 relative">
+          <div className="mt-auto relative">
             <div className="bg-gradient-to-r from-red-600 to-red-700 text-white text-center py-3 px-4 text-sm font-bold tracking-wider border-l-4 border-r-4 border-dashed border-red-400 transition-all group-hover:from-yellow-500 group-hover:to-yellow-600 group-hover:text-black">
               BOOK TICKET
             </div>
