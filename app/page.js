@@ -141,20 +141,64 @@ export default function Home() {
             <h3 className="text-white font-bold text-xl mb-2">No Movies Found</h3>
             <p className="text-gray-400">Check back soon for new releases!</p>
           </div>
-        ) : (
-          <div className="max-w-7xl mx-auto">
-            {/* Movie poster grid - cinema style */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-              {shows
-                .filter((s) =>
-                  !query ? true : s.title?.toLowerCase().includes(query.toLowerCase())
-                )
-                .map((show) => (
+        ) : (() => {
+          const filteredShows = shows.filter((s) =>
+            !query ? true : s.title?.toLowerCase().includes(query.toLowerCase())
+          );
+          
+          return filteredShows.length === 0 ? (
+            <div className="max-w-md mx-auto text-center bg-gray-900/50 border border-gray-700/50 rounded-lg p-12">
+              <div className="w-20 h-20 mx-auto mb-6 bg-yellow-400/10 rounded-full flex items-center justify-center">
+                <svg className="w-10 h-10 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 className="text-white font-bold text-xl mb-2">No Movies Found</h3>
+              <p className="text-gray-400">No movies match your search for "{query}"</p>
+              <p className="text-gray-500 text-sm mt-2">Try searching with different keywords</p>
+            </div>
+          ) : (
+            <div className="max-w-7xl mx-auto">
+              {/* Movie poster grid - cinema style */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                {filteredShows.map((show) => (
                   <ShowCard key={show._id} show={show} />
                 ))}
+              </div>
             </div>
+          );
+        })()}
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-8 bg-gray-900/50 border-t border-gray-800">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Contact Us
+          </h2>
+          <p className="text-gray-400 mb-6">
+            Have questions about bookings or need assistance? We're here to help!
+          </p>
+          
+          <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700/50">
+            <div className="flex items-center justify-center mb-3">
+              <svg className="w-6 h-6 mr-2 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <h3 className="text-lg font-semibold text-white">Email Us</h3>
+            </div>
+            <a 
+              href="mailto:emailexample@email.com" 
+              className="text-yellow-400 hover:text-yellow-300 text-lg font-medium transition-colors"
+            >
+              emailexample@email.com
+            </a>
+            <p className="text-gray-400 text-sm mt-2">
+              We'll get back to you within 24 hours
+            </p>
           </div>
-        )}
+        </div>
       </section>
     </div>
   );

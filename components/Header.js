@@ -106,7 +106,7 @@ export default function Header() {
             <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
               Now Showing
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
+            <Link href="/upcoming" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">
               Coming Soon
             </Link>
             <Link href="#contact" className="text-gray-300 hover:text-yellow-400 transition-colors font-medium">

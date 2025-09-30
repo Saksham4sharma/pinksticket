@@ -28,13 +28,13 @@ export default function ShowCard({ show }) {
     <Link href={`/shows/${show._id}`}>
       <div className="group cursor-pointer">
         {/* Movie poster */}
-        <div className="relative aspect-[2/3] mb-3 overflow-hidden rounded-lg border-2 border-gray-800 shadow-2xl transition-all duration-300 group-hover:border-yellow-400 group-hover:scale-105 group-hover:shadow-yellow-400/20">
+        <div className="relative aspect-[3/4] mb-4 overflow-hidden rounded-lg border-2 border-gray-800 shadow-2xl transition-all duration-300 group-hover:border-yellow-400 group-hover:scale-105 group-hover:shadow-yellow-400/20">
           {show.posterUrl ? (
             <Image
               src={show.posterUrl}
               alt={show.title}
               fill
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 16vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
               className="object-cover transition-transform duration-500 group-hover:scale-110"
               priority={false}
               unoptimized
@@ -42,10 +42,10 @@ export default function ShowCard({ show }) {
           ) : (
             <div className="h-full w-full bg-gradient-to-br from-gray-800 via-gray-900 to-black flex items-center justify-center">
               <div className="text-center">
-                <svg className="w-12 h-12 text-gray-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-16 h-16 text-gray-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2M7 4h10M7 4v16a1 1 0 001 1h8a1 1 0 001-1V4" />
                 </svg>
-                <span className="text-xs text-gray-500">NO POSTER</span>
+                <span className="text-sm text-gray-500">NO POSTER</span>
               </div>
             </div>
           )}
@@ -70,12 +70,12 @@ export default function ShowCard({ show }) {
         </div>
 
         {/* Movie info */}
-        <div className="space-y-2">
-          <h3 className="font-black text-white text-sm md:text-base leading-tight line-clamp-2 group-hover:text-yellow-400 transition-colors">
+        <div className="space-y-3">
+          <h3 className="font-black text-white text-base md:text-lg leading-tight line-clamp-2 group-hover:text-yellow-400 transition-colors">
             {show.title}
           </h3>
           
-          <div className="flex items-center justify-between text-xs">
+          <div className="flex items-center justify-between text-sm">
             <span className="text-gray-400">
               {nextShow ? formatShowtime(nextShow).split(',')[0] : "TBA"}
             </span>
@@ -85,8 +85,8 @@ export default function ShowCard({ show }) {
           </div>
           
           {/* Ticket stub style button */}
-          <div className="mt-3 relative">
-            <div className="bg-gradient-to-r from-red-600 to-red-700 text-white text-center py-2 px-3 text-xs font-bold tracking-wider border-l-4 border-r-4 border-dashed border-red-400 transition-all group-hover:from-yellow-500 group-hover:to-yellow-600 group-hover:text-black">
+          <div className="mt-4 relative">
+            <div className="bg-gradient-to-r from-red-600 to-red-700 text-white text-center py-3 px-4 text-sm font-bold tracking-wider border-l-4 border-r-4 border-dashed border-red-400 transition-all group-hover:from-yellow-500 group-hover:to-yellow-600 group-hover:text-black">
               BOOK TICKET
             </div>
             {/* Ticket perforations */}
