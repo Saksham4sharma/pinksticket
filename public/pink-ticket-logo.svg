@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Main ticket shape -->
+  <g transform="translate(300, 190)">
+    <!-- Outer ticket border -->
+    <path d="M0 30 Q0 0 30 0 L170 0 Q200 0 200 30 Q220 30 220 50 Q220 70 200 70 Q200 100 170 100 Q200 100 200 130 Q220 130 220 150 Q220 170 200 170 Q200 200 170 200 L30 200 Q0 200 0 170 Q-20 170 -20 150 Q-20 130 0 130 Q0 100 30 100 Q0 100 0 70 Q-20 70 -20 50 Q-20 30 0 30 Z" 
+          fill="#e91e63" stroke="#ad1457" stroke-width="3"/>
+    
+    <!-- Inner ticket area -->
+    <rect x="15" y="15" width="170" height="170" rx="15" fill="#f8bbd9"/>
+    
+    <!-- Film strip perforations at top -->
+    <rect x="30" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="45" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="60" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="75" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="90" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="105" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="120" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="135" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="150" y="25" width="8" height="6" rx="2" fill="#e91e63"/>
+    
+    <!-- Film strip perforations at bottom -->
+    <rect x="30" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="45" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="60" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="75" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="90" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="105" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="120" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="135" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    <rect x="150" y="169" width="8" height="6" rx="2" fill="#e91e63"/>
+    
+    <!-- Main screen area -->
+    <rect x="35" y="50" width="130" height="90" rx="8" fill="#f48fb1"/>
+    
+    <!-- Play button triangle -->
+    <polygon points="85,75 85,115 115,95" fill="#e91e63"/>
+  </g>
+</svg>

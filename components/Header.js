@@ -85,7 +85,7 @@ export default function Header() {
           <Link href="/" className="group flex items-center space-x-3">
             <div className="relative transition-transform group-hover:scale-105">
               <Image
-                src="/pinks-ticket-exact.svg"
+                src="/pink-movie-ticket.svg"
                 alt="Pink's Ticket"
                 width={80}
                 height={60}
@@ -94,8 +94,8 @@ export default function Header() {
                 unoptimized
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-2xl font-black tracking-tight text-pink-500 group-hover:text-pink-400 transition-colors">
+            <div className="block">
+              <h1 className="text-lg sm:text-2xl font-black tracking-tight text-pink-500 group-hover:text-pink-400 transition-colors">
                 Pink's Ticket
               </h1>
             </div>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Main ticket shape with wavy edges -->
+  <path d="M50 50 Q60 40 80 45 Q100 50 120 45 Q140 40 160 45 Q180 50 200 45 Q220 40 240 45 Q260 50 280 45 Q300 40 320 45 Q340 50 350 60 L350 240 Q340 250 320 255 Q300 260 280 255 Q260 250 240 255 Q220 260 200 255 Q180 250 160 255 Q140 260 120 255 Q100 250 80 255 Q60 260 50 240 Z" 
+        fill="#e91e63" stroke="#c2185b" stroke-width="2"/>
+  
+  <!-- Inner ticket area -->
+  <rect x="70" y="70" width="260" height="160" rx="10" fill="#f8bbd9"/>
+  
+  <!-- Film strip perforations at top -->
+  <rect x="90" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="110" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="130" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="150" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="170" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="190" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="210" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="230" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="250" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="270" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="290" y="85" width="12" height="8" rx="3" fill="#e91e63"/>
+  
+  <!-- Main screen area -->
+  <rect x="90" y="110" width="220" height="100" rx="8" fill="#f48fb1"/>
+  
+  <!-- Play button triangle -->
+  <polygon points="180,135 180,185 220,160" fill="#e91e63"/>
+  
+  <!-- Film strip perforations at bottom -->
+  <rect x="90" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="110" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="130" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="150" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="170" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="190" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="210" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="230" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="250" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="270" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+  <rect x="290" y="215" width="12" height="8" rx="3" fill="#e91e63"/>
+</svg>
