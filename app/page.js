@@ -109,13 +109,17 @@ export default function Home() {
         {loading ? (
           /* Movie poster loading skeletons */
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-              {Array.from({ length: 12 }).map((_, i) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {Array.from({ length: 8 }).map((_, i) => (
                 <div key={i} className="group">
-                  <div className="aspect-[2/3] bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg animate-pulse"></div>
-                  <div className="mt-3 space-y-2">
-                    <div className="h-4 bg-gray-800 rounded animate-pulse"></div>
-                    <div className="h-3 bg-gray-800 rounded w-2/3 animate-pulse"></div>
+                  <div className="aspect-[3/4] bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg animate-pulse mb-4"></div>
+                  <div className="space-y-3">
+                    <div className="h-6 bg-gray-800 rounded animate-pulse"></div>
+                    <div className="flex justify-between">
+                      <div className="h-4 bg-gray-800 rounded w-1/3 animate-pulse"></div>
+                      <div className="h-4 bg-gray-800 rounded w-1/4 animate-pulse"></div>
+                    </div>
+                    <div className="h-10 bg-gray-800 rounded animate-pulse mt-4"></div>
                   </div>
                 </div>
               ))}
@@ -159,8 +163,7 @@ export default function Home() {
             </div>
           ) : (
             <div className="max-w-7xl mx-auto">
-              {/* Movie poster grid - cinema style */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-fr">
                 {filteredShows.map((show) => (
                   <ShowCard key={show._id} show={show} />
                 ))}
